@@ -33,8 +33,7 @@
     },
     "squirrelWindows": {
       "iconUrl": "https://raw.githubusercontent.com/electron/electron-api-demos/master/assets/app-icon/win/app.ico",
-      "remoteReleases": true,
-      "useAppIdAsId": false,
+      "useAppIdAsId": true,
       "remoteToken": "fe8a334b66993a70105ca5cb5612d7dd2f925f41"
     }
   }
