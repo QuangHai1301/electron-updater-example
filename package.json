@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
@@ -33,7 +33,8 @@
     },
     "squirrelWindows": {
       "iconUrl": "https://raw.githubusercontent.com/electron/electron-api-demos/master/assets/app-icon/win/app.ico",
-      "useAppIdAsId": false
+      "useAppIdAsId": false,
+      "remoteReleases": true
     }
   }
 }
