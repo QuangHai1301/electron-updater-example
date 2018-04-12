@@ -34,7 +34,7 @@
     "squirrelWindows": {
       "iconUrl": "https://raw.githubusercontent.com/electron/electron-api-demos/master/assets/app-icon/win/app.ico",
       "useAppIdAsId": false,
-      "remoteReleases": true
+      "remoteReleases": "https://github.com/QuangHai1301/electron-updater-example"
     }
   }
 }
