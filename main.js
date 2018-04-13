@@ -1,9 +1,9 @@
 // This is free and unencumbered software released into the public domain.
 // See LICENSE for details
-
 const {app, BrowserWindow, Menu, protocol, ipcMain} = require('electron');
 const log = require('electron-log');
 const {autoUpdater} = require("electron-updater");
+autoUpdater.logger = require("electron-log")
 
 //-------------------------------------------------------------------
 // Logging
@@ -87,7 +87,7 @@ autoUpdater.on('download-progress', (progressObj) => {
 })
 autoUpdater.on('update-downloaded', (info) => {
   sendStatusToWindow('Update downloaded');
-  autoUpdater.quitAndInstall(true, true)
+  autoUpdater.quitAndInstall(true, true);
 
 });
 app.on('ready', function() {
@@ -112,7 +112,7 @@ app.on('window-all-closed', () => {
 // app quits.
 //-------------------------------------------------------------------
 app.on('ready', function()  {
-  autoUpdater.checkForUpdatesAndNotify();
+  autoUpdater.checkForUpdates();
 });
 
 //-------------------------------------------------------------------

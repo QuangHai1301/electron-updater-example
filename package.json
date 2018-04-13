@@ -1,19 +1,20 @@
 {
   "name": "electron-updater-example",
-  "version": "0.7.1",
+  "version": "0.7.0",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
   "scripts": {
-    "publish": "build -p always"
+    "publish": "build -p always",
+    "build": "electron-builder -w"
   },
   "devDependencies": {
     "electron": "^1.7.9",
     "electron-builder": "^19.43.3"
   },
   "dependencies": {
-    "electron-builder-squirrel-windows": "^20.8.0",
     "electron-log": "^1.3.0",
+    "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^2.18.2"
   },
   "build": {
@@ -26,15 +27,7 @@
       ]
     },
     "win": {
-      "target": [
-        "squirrel"
-      ],
-      "icon": "./app.ico"
-    },
-    "squirrelWindows": {
-      "iconUrl": "https://raw.githubusercontent.com/electron/electron-api-demos/master/assets/app-icon/win/app.ico",
-      "useAppIdAsId": false,
-      "remoteReleases": "https://github.com/QuangHai1301/electron-updater-example"
+        "target": "nsis-web"
     }
   }
 }
