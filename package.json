@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
@@ -28,6 +28,13 @@
     },
     "win": {
         "target": "nsis-web"
+    },
+     "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": true,
+      "differentialPackage": true
     }
   }
 }
