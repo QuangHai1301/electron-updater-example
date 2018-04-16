@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
@@ -10,10 +10,10 @@
   },
   "devDependencies": {
     "electron": "^1.7.9",
-    "electron-builder": "^19.43.3"
+    "electron-builder": "^20.8.1"
   },
   "dependencies": {
-    "electron-log": "^1.3.0",
+    "electron-log": "^2.2.14",
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^2.18.2"
   },
@@ -27,9 +27,9 @@
       ]
     },
     "win": {
-        "target": "nsis-web"
+      "target": "nsis-web"
     },
-     "nsisWeb": {
+    "nsisWeb": {
       "differentialPackage": true
     }
   }
